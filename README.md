@@ -1,92 +1,105 @@
-# Desafio para o processo seletivo SHARENERGY 2023/01
+<h1 align="center"> Sharenergy Test </h1>
 
-Repositório destinado aos interessados em participar do processo seletivo da SHARENERGY 2023/01. As vagas são voltadas para desenvolvimento de aplicações Web e Mobile.
+Tip: Por favor, use o comando `ctrl shift v` para visualizar o README.md no VSCode com o Markdown Preview Enhanced e assim ter uma melhor experiência de leitura.
 
-## Sobre a SHARENERGY
-
-No ramo da produção de energia fotovoltaica, há a modalidade de produção compartilhada. Nessa modalidade, diferentes pessoas investem na construção de uma mesma usina fotovoltaica e dividem o retorno finaceiro referente à energia gerada pela usina.
-
-Acreditamos que as energias renováveis terão um lugar dominante em nossa economia pelo resto de nossas vidas. Trabalhamos no sentido de ampliar o impacto positivo que as energias renováveis podem ter no meio ambiente e nas nossas vidas. O sucesso da SHARENERGY é resultado de nossa equipe apaixonada, juntamente com nosso compromisso de oferecer a melhor solução.
-
-Sabemos que negócios enfrentam desafios únicos e por isso oferecemos soluções turnkey, customizadas, economicamente viáveis e seguras.
-
-A Startup figura entre as top 10 EnergyTechs do ranking 100 Open Startups desde 2018. Prova de que a inovação está enraizada em nossa cultura. Somos uma startup em estágio de crescimento e você trabalhará diretamente com os fundadores, ajudando a definir a visão, o produto e a experiência do usuário.
-
-<p align="left">
-  <a href="https://www.linkedin.com/company/sharenergy-brasil/">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn Button">
-  </a>
-  <a href="https://sharenergy.com.br/">
-    <img src="https://img.shields.io/badge/-Website-red" alt="Sharenergy Website Button">
-  </a>
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 </p>
 
-## Sobre a vaga
+<br>
 
-Já pensou em potencializar o setor que mais cresce na galáxia e trabalhar com uma solução que utiliza tecnologia web de ponta, altamente distribuída com foco em performance e disponibilidade? 👀
+<p align="center">
+  <img alt="preview" src="./.github/preview.png" width="100%">
+</p>
 
-Os desenvolvedores da Sharenergy são responsáveis por criar e manter aplicações para clientes internos e externos, prover soluções escaláveis, resilientes e altamente disponíveis que sustentem picos de acesso além de atuar como referência técnica e tutores de outros desenvolvedores.
+## 🚀 Tecnologias
 
-Procuramos por pessoas dinâmicas e que queiram estar aprendendo sempre. Nossa equipe é jovem, motivada e estamos sempre em busca de soluções criativas para alcançar os resultados que nossos clientes esperam. Se você tem esse perfil, é autoconfiante, autodidata e tem facilidade para lidar com desafios diários, essa vaga é para você!
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-# O Desafio
+Frontend: ReactJS & TypeScript;
 
-Construir uma aplicação web (frontend e backend) capaz de realizar a comunicação com APIs distintas, além de um CRUD.
+- [ReactJS](https://reactjs.org) (ReactJS)
+- [TypeScript](https://www.typescriptlang.org/) (TypeScript)
+- [Vite](https://vitejs.dev/) (Bundler)
+- [Styled Components](https://styled-components.com/) (CSS)
+- [Axios](https://axios-http.com/) (API)
 
-## Aplicação
+Backend: NestJS & TypeScript;
 
-- A página inicial da aplicação deve ser uma `Login Page`;
-- O usuário deve ser capaz de se autenticar utilizando o username `desafiosharenergy` e password `sh@r3n3rgy`, também, deve existir a possibilidade do usuário utilizar o `remember me` para realizar logins automáticos, sem a necessidade de digitar username e password após o primeiro acesso;
-- Após o Login, a página principal deve conter uma listagem de usuários gerada a partir da api [Random User Generator](https://randomuser.me/), a lista deve conter a foto do usuário, nome completo, email, username e idade. Além disso, os requests devem ser páginados, porém, é de critério do participante do desafio a quantidade de resultados a serem exibidos por página e variações para o mesmo. Também, deve haver uma search para buscar usuários por nome, email ou username;
-- Em uma segunda página, o usuário deve ser capaz de selecionar um status code http qualquer, e, após a seleção, deve ser retornada uma imagem da api [HTTP Cat](https://http.cat/) relacionada ao status escolhido, caso não exista tal imagem, deve ser retornada uma imagem de not found à critério de escolha do participante do desafio;
-- Em uma terceira página, deve haver um botão de refresh que, ao ser clicado, deve retornar uma imagem aleatória da api [Random Dog](https://random.dog/);
-- Em uma quarta página, deve haver uma lista de clientes, através da qual o usuário deve ser capaz de cadastrar novos clientes, visualizar informações de um cliente específico, atualizar um cliente e deletar clientes. O cadastro deve possuir nome, email, telefone, endereço e cpf.
+- [NestJS](https://nestjs.com/) (NestJS)
+- [TypeScript](https://www.typescriptlang.org/) (TypeScript)
+- [Jest](https://jestjs.io/) (Testes)
+- [Axios](https://axios-http.com/) (API)
+- [MongoDB](https://www.mongodb.com/) (Banco de Dados)
+- [Mongoose](https://mongoosejs.com/) (ORM)
 
-### Requisitos da aplicação e de código
+## 💻 Projeto
 
-- Interface amigável, bonita e limpa
-- Responsividade
-- Clean Code
+O projeto foi desenvolvido para o teste da Sharenergy, onde o objetivo era criar uma aplicação que consumisse API's distintas além de um CRUD de clientes.
 
-### Ferramentas e Stack a ser utilizado
+<br/>
+<br/>
 
-- ReactJS para o frontend
-- NodeJS (com ou sem frameworks) ou Golang para o backend
-- MongoDB
-- TypeScript
-- HTML e CSS
+## 🚀 Como executar
 
-### Aprimoramentos adicionais da aplicação (opcional)
+- Escopo: O projeto foi desenvolvido com o intuito de ser executado em ambiente de desenvolvimento local, portanto, não foi feito deploy para produção. Para executar o projeto, é necessário ter o NodeJS instalado em sua máquina.
 
-A aplicação criada para o desafio pode ser aprimorada com recursos pensados por você. A seguir, foram listadas algumas sugestões do que poderia ser feito:
+#### Inicializando o frontend:
 
-- Testes
-- Documentação
+- Clone o repositório.
+- cd frontend && `npm install` ou `yarn install` para instalar as dependências.
+- `npm run dev` ou `yarn dev` para iniciar o servidor de desenvolvimento.
 
-### Mas, afinal, quais ferramentas a Sharenergy utiliza?
+#### Inicializando o backend:
 
-* [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) e [Typescript](https://www.typescriptlang.org/)
-* Front-end: [ReactJS](https://reactjs.org/) e [React Native](https://reactnative.dev/)
-* Back-end: [Node.js](https://nodejs.org/en/), [NestJS](https://nestjs.com/) e [Go](https://golang.org/)
-* Banco de dados: [MongoDB](https://www.mongodb.com/) do lado do servidor e [Minimongo](https://guide.meteor.com/collections.html) do lado do cliente (cache)
-* Gerenciamento de Containers: [Docker](https://www.docker.com/)
-* Gerenciamento de Repositórios: [NX](https://nx.dev/)
-* UI: [Tailwind CSS](https://tailwindcss.com/) e [Material-UI V4](https://v4.mui.com/)
-* Sistema Operacional (principal): [Linux](https://www.linux.org/), também sendo possível utilizar o [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/) (WSL)
+- cd backend && `npm install` ou `yarn install` para instalar as dependências.
+- `npm run start:dev` ou `yarn start:dev` para iniciar o servidor de desenvolvimento e ter acesso ao banco de dados e a API.
 
-## O que devo entregar?
+Feito isso, o projeto estará disponível e pronto para ser avaliado em seu navegador pelo endereço http://localhost:5173.
 
-Esperamos de você duas entregas: o código no GitHub e um vídeo explicativo no YouTube.
+<br/>
+<br/>
 
-### Instruções
+## 📝 Documentação
 
-- Faça um fork desse repositório.
-- Em seguida, crie uma branch, cujo nome é o seu nome completo, no seguinte formato: meu-nome-completo.
-- Resolva o desafio realizando versionamento local e remoto. Fique à vontade em criar outras branches durante o desenvolvimento do código.
-- Inclua no README.md uma breve instrução de instalação e de execução da aplicação criada.
-- Faça um vídeo que explique o que você fez no desafio, com duração aproximada de 5 minutos. A facecam é opcional, mas bem-vinda. O vídeo deve ser postado no YouTube (pode deixar como não listado) e seu link deve ser colocado no README.md.
-- Ao finalizar o desafio, faça um pull request de sua branch para esse repositório.
+- [Documentação da API com Swagger](https://app.swaggerhub.com/apis-docs/GUSTAVOHABATISTA/sharenergy-test_gustavo_batista/1.0#/)
 
-### Prazo limite de entrega
+  > Minhas rotas que desenvolvi no NestJS e usei o Insomnia para testar as rotas e exportei para o Swagger para documentar a API.
 
-O pull request com sua solução do desafio deve ser feito até a data especificada no corpo do email que você recebeu com a descrição do desafio.
+- [Documentação com Figma](https://www.figma.com/file/CQpvUqcAroGJazWeR9wvrj/Sharenergy-2023-01?node-id=0%3A1&t=MDNj53bAMu08bb9u-1)
+
+  > Fiz um protótipo no Figma para ter uma ideia de como ficaria a aplicação.
+
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+
+  > Utilizei o MongoDB Atlas para hospedar o banco de dados da aplicação.
+
+  <p align="center">
+    <img alt="preview" src="./.github/cloud.mongodb.com_v2.png" width="95%">
+  </p>
+
+<br/>
+<br/>
+
+## 📃 Testes
+
+- A aplicação foi desenvolvida com o intuito de ser testada, portanto, foi utilizado o Jest para testar algumas funcionalidades. Para executar os testes, basta executar o comando `npm run test` ou `yarn test` no terminal dentro do diretório do backend.
+
+<br/>
+<br/>
+
+## 📺 Video de apresentação do projeto no YouTube
+
+- [Video de apresentação do projeto no YouTube](https://youtu.be/vq36kC7zVKE)
+
+<br/>
+<br/>
+
+## 💌 Agradecimentos
+
+- Agradeço a oportunidade de participar do processo seletivo da Sharenergy, foi uma experiência incrível e inesquecível. Foi muito divertido desenvolver esse projeto e espero que assim como eu, vocês gostem do resultado final. 🧡
+
+---
+
+Feito com ♥ by Gustavo Batista :wave: [LinkedIn](https://www.linkedin.com/in/gustavo-h-batista/) e [GitHub](https://github.com/gustavohdab)

@@ -1,0 +1,112 @@
+/* FakeData for testing purposes */
+import { TableRow } from "./interfaces";
+
+export const fakeRandomUserRows: TableRow[] = [
+  {
+    id: 1,
+    avatar: "https://http.cat/100",
+    name: "Jane Doe",
+    email: "jane.doe@example.com",
+    username: "jane_doe",
+    age: 32,
+  },
+  {
+    id: 2,
+    avatar: "https://http.cat/100",
+    name: "Jane Doe",
+    email: "jane.doe@example.com",
+    username: "jane_doe",
+    age: 32,
+  },
+  {
+    id: 3,
+    avatar: "https://http.cat/100",
+    name: "Jane Doe",
+    email: "jane.doe@example.com",
+    username: "jane_doe",
+    age: 32,
+  },
+  {
+    id: 4,
+    avatar: "https://http.cat/100",
+    name: "Jane Doe",
+    email: "jane.doe@example.com",
+    username: "jane_doe",
+    age: 32,
+  },
+  {
+    id: 5,
+    avatar: "https://http.cat/100",
+    name: "Jane Doe",
+    email: "jane.doe@example.com",
+    username: "jane_doe",
+    age: 32,
+  },
+];
+
+export const fakeClientRows: TableRow[] = [
+  {
+    id: 1,
+    name: "John Smith",
+    email: "john.smith@example.com",
+    phone: "1234567890",
+    address: "1 Main St",
+    cpf: "123.456.789-01",
+  },
+  {
+    id: 2,
+    name: "John Smith",
+    email: "john.smith@example.com",
+    phone: "1234567890",
+    address: "1 Main St",
+    cpf: "123.456.789-01",
+  },
+  {
+    id: 3,
+    name: "John Smith",
+    email: "john.smith@example.com",
+    phone: "1234567890",
+    address: "1 Main St",
+    cpf: "123.456.789-01",
+  },
+  {
+    id: 4,
+    name: "John Smith",
+    email: "john.smith@example.com",
+    phone: "1234567890",
+    address: "1 Main St",
+    cpf: "123.456.789-01",
+  },
+  {
+    id: 5,
+    name: "John Smith",
+    email: "john.smith@example.com",
+    phone: "1234567890",
+    address: "1 Main St",
+    cpf: "123.456.789-01",
+  },
+  {
+    id: 6,
+    name: "John Smith",
+    email: "john.smith@example.com",
+    phone: "1234567890",
+    address: "1 Main St",
+    cpf: "123.456.789-01",
+  },
+  {
+    id: 7,
+    name: "John Smith",
+    email: "john.smith@example.com",
+    phone: "1234567890",
+    address: "1 Main St",
+    cpf: "123.456.789-01",
+  },
+  {
+    id: 8,
+    name: "Alice",
+    email: "john.smith@example.com",
+    phone: "1234567890",
+    address: "1 Main St",
+    cpf: "123.456.789-02",
+  },
+];
