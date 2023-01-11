@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { clearFields, myAPI } from "../../services";
-import { Button, Input } from "../../components";
+import { Button, Input, MaskedInput } from "../../components";
 import { Container, Form } from "./styles";
 import {
   FiArrowLeft,
@@ -74,7 +74,7 @@ export function CustomersRegister() {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <Input
+        <MaskedInput
           placeholder="Telefone"
           id="phone"
           icon={FiPhone}
@@ -83,6 +83,7 @@ export function CustomersRegister() {
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           required
+          mask={"(99) 99999-9999"}
         />
         <Input
           placeholder="Endereço"
@@ -94,7 +95,7 @@ export function CustomersRegister() {
           onChange={(e) => setAddress(e.target.value)}
           required
         />
-        <Input
+        <MaskedInput
           placeholder="CPF"
           id="cpf"
           icon={FiUserCheck}
@@ -103,9 +104,18 @@ export function CustomersRegister() {
           value={cpf}
           onChange={(e) => setCpf(e.target.value)}
           required
+          mask={"999.999.999-99"}
         />
 
         <Button title="Cadastrar" onClick={createCustomer} type="submit" />
+        <Button
+          title="Limpar"
+          onClick={() =>
+            clearFields(setName, setEmail, setPhone, setAddress, setCpf)
+          }
+          type="reset"
+          style={{ backgroundColor: "#f44336", color: "#fff" }}
+        />
       </Form>
     </Container>
   );

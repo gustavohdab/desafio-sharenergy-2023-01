@@ -4,6 +4,7 @@ interface ButtonProps {
   title: string;
   loading?: boolean;
   icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  style?: React.CSSProperties;
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
 }

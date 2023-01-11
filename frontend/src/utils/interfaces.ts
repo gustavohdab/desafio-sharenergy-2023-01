@@ -9,9 +9,9 @@ export interface TableRow {
   email: string;
   username?: string;
   age?: number;
-  phone?: string;
+  phone?: number;
   address?: string;
-  cpf?: string;
+  cpf?: number;
 }
 
 /* Defining the interface for the table props. */

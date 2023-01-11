@@ -4,6 +4,7 @@ import { Input, Button } from "../index";
 import { FiUser, FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 import { UpdateCustomerDto } from "../../../../backend/src/dto/index";
 import { TableRow } from "../../utils/interfaces";
+import { MaskedInput } from "../index";
 
 interface UpdateFormProps {
   selectedRow: TableRow;
@@ -15,7 +16,7 @@ export function UpdateForm({ selectedRow, onClose }: UpdateFormProps) {
   const [formData, setFormData] = useState<UpdateCustomerDto>({
     name: selectedRow.name,
     email: selectedRow.email,
-    phone: selectedRow.phone,
+    phone: selectedRow.phone.toFixed(),
     address: selectedRow.address,
   });
   const api = myAPI();
@@ -72,7 +73,7 @@ export function UpdateForm({ selectedRow, onClose }: UpdateFormProps) {
         type="email"
         name="email"
       />
-      <Input
+      <MaskedInput
         placeholder="Telefone"
         id="phone"
         value={formData.phone}
@@ -80,6 +81,7 @@ export function UpdateForm({ selectedRow, onClose }: UpdateFormProps) {
         icon={FiPhone}
         type="text"
         name="phone"
+        mask="(99) 99999-9999"
       />
       <Input
         placeholder="Endereço"
@@ -91,6 +93,12 @@ export function UpdateForm({ selectedRow, onClose }: UpdateFormProps) {
         name="address"
       />
       <Button type="submit" title="Salvar" />
+      <Button
+        type="button"
+        title="Cancelar"
+        onClick={onClose}
+        style={{ backgroundColor: "red", color: "white" }}
+      />
       {error && <p>{error}</p>}
     </form>
   );

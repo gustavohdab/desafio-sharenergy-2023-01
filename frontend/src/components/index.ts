@@ -7,6 +7,7 @@ import { Table } from "./Table";
 import { Input } from "./Input";
 import { Modal } from "./Modal";
 import { Pagination } from "./Pagination";
+import { MaskedInput } from "./MaskedInput";
 export {
   Button,
   Header,
@@ -17,4 +18,5 @@ export {
   Input,
   Modal,
   Pagination,
+  MaskedInput,
 };

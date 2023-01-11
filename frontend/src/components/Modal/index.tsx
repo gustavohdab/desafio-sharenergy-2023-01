@@ -81,7 +81,11 @@ export function Modal({
                   setShowUpdateForm(true);
                 }}
               />
-              <Button title="Deletar" onClick={deleteCustomer} />
+              <Button
+                title="Deletar"
+                onClick={deleteCustomer}
+                style={{ backgroundColor: "red", color: "white" }}
+              />
             </div>
           )}
         </div>
