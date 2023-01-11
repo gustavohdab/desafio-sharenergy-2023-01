@@ -58,6 +58,12 @@ O projeto foi desenvolvido para o teste da Sharenergy, onde o objetivo era criar
 
 Feito isso, o projeto estará disponível e pronto para ser avaliado em seu navegador pelo endereço http://localhost:5173.
 
+#### Entre com as seguintes credenciais:
+
+> username: `desafiosharenergy`
+
+> password: `sh@r3n3rgy`
+
 <br/>
 <br/>
 
